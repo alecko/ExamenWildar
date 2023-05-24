@@ -1,0 +1,13 @@
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\ExecChallenge.exe.config
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\ExecChallenge.exe
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\ExecChallenge.pdb
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\DevelopmentChallenge.Data.dll
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\DevelopmentChallenge.Data.pdb
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.csproj.AssemblyReference.cache
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.csproj.SuggestedBindingRedirects.cache
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.csproj.CoreCompileInputs.cache
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.csproj.CopyComplete
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.exe
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\obj\Debug\ExecChallenge.pdb
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\it-IT\DevelopmentChallenge.Data.resources.dll
+C:\Users\alema\Desktop\ExamenWildar\DevelopmentChallenge\Source\ExecChallenge\bin\Debug\es-ES\DevelopmentChallenge.Data.resources.dll
