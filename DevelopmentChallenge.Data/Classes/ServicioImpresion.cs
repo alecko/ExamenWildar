@@ -13,18 +13,21 @@ namespace DevelopmentChallenge.Data.Classes
     public class ServicioImpresion
     {
 
-        public static string Imprimir(List<IFormaGeometrica> formas, string cultura)
+        public static string Imprimir(List<IFormaGeometrica> formas, string cultura="")
         {
-            Resources.Culture = new CultureInfo(cultura);
+         //   Resources.Culture = new CultureInfo(cultura);
+            ResourceManager rm = new ResourceManager(typeof(Resources));
+            ResourceSet rs = rm.GetResourceSet(CultureInfo.CreateSpecificCulture(cultura), true, true);
+            
             var sb = new StringBuilder();
-
+            
             if (!formas.Any())
             {
-                sb.Append($"<h1>{Resources.MensajeVacio}</h1>");
+                sb.Append($"<h1>{rs.GetString("MensajeVacio")}</h1>");
             }
             else
             {
-                sb.Append($"<h1>{Resources.Encabezado}</h1>");
+                sb.Append($"<h1>{rs.GetString("Encabezado")}</h1>");
 
                 var resultados = formas.GroupBy(f => new { f.GetType().Name })
                     .Select(g => new
@@ -37,14 +40,13 @@ namespace DevelopmentChallenge.Data.Classes
 
                 foreach (var res in resultados)
                 {
-                    //sb.Append($"{Resources.nameof(res.Forma)} - {Resources.LabelCantidad}: {res.Cantidad} {Resources.LabelArea}: {res.Areas}, {Resources.LabelPerimetro}: {res.Perimetros}");
-                    sb.Append($"{res.Forma} - {Resources.LabelCantidad}: {res.Cantidad} {Resources.LabelArea}: {res.Areas}, {Resources.LabelPerimetro}: {res.Perimetros}");
+                    sb.Append($"{rs.GetString(res.Forma)} - {rs.GetString("LabelCantidad")}: {res.Cantidad} {rs.GetString("LabelArea")}: {res.Areas.ToString("#.##")}, {rs.GetString("LabelPerimetro")}: {res.Perimetros.ToString("#.##")}</br>");
                 }
 
-                sb.Append($"{Resources.Footer}:</br>");
-                sb.Append($"{formas.Count} {Resources.Formas}");
-                sb.Append($" - {Resources.LabelPerimetro} {resultados.Sum(r => r.Perimetros)} ");
-                sb.Append($" - {Resources.LabelArea} {resultados.Sum(r => r.Areas)} ");
+                sb.Append($"<h1>{rs.GetString("Footer")}:</h1>");
+                sb.Append($"{formas.Count} {rs.GetString("Formas")}");
+                sb.Append($" - {rs.GetString("LabelPerimetro")} {resultados.Sum(r => r.Perimetros).ToString("#.##")} ");
+                sb.Append($" - {rs.GetString("LabelArea")} {resultados.Sum(r => r.Areas).ToString("#.##")} ");
             }
 
             return sb.ToString();

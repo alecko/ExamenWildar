@@ -35,7 +35,7 @@ namespace ExecChallenge
                 new TrianguloEquilatero(4),
             };
 
-            var resumen = ServicioImpresion.Imprimir(formas, "it-IT");
+            var resumen = ServicioImpresion.Imprimir(formas, "es-ES");
             Console.Write(resumen);
             //resumen = ServicioImpresion.Imprimir(formas, "it-IT");
             //Console.Write(resumen);
